@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_black_color" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bar_pattern" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/header_logo" />
+
+        <ImageView
+            android:id="@+id/imgViewMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="10dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:src="@drawable/ic_back" />
+        
+        <ImageView
+            android:id="@+id/imgViewPostReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:src="@drawable/check_icon"
+            android:padding="5dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_bg_edittext" >
+
+        <EditText
+            android:id="@+id/txtReview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:padding="3dp"
+            android:gravity="top|left"
+            android:hint="@string/placeholder_review"
+            android:maxLines="@integer/num_new_lines_5"
+            android:textColor="@color/bg_white_color"
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ_!@#$%^*() ,./;:"
+            android:textSize="@dimen/text_size_20sp" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvMaxCharCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="Medium Text"
+            android:textColor="@color/skyblue"
+            android:background="@null"
+            android:paddingBottom="3dp"
+            android:paddingRight="3dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+</LinearLayout>

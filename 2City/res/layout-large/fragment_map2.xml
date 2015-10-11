@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- <fragment 
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment"/> -->
+          
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bar_pattern" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/header_logo" />
+
+        <ImageView
+            android:id="@+id/imgViewMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:padding="10dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:src="@drawable/ic_menu" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <!-- <com.sothree.slidinguppanel.SlidingUpPanelLayout
+		    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+		    android:id="@+id/sliding_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="bottom"
+		    android:orientation="vertical"
+		    sothree:panelHeight="300dp"
+		    sothree:shadowHeight="4dp"> -->
+	
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+	            
+                <fragment
+		          android:id="@+id/googleMap"
+		          android:layout_width="match_parent"
+		          android:layout_height="match_parent"
+		          class="com.google.android.gms.maps.SupportMapFragment" />
+		        
+		        <com.drawingview.DrawingView
+					android:id="@+id/drawingView"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent" />
+	        
+            </FrameLayout>
+	        
+	        <com.sliding.MGSliding
+	            android:id="@+id/frameSliding"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="bottom|center"
+	            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewThumb"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_info_placeholder" />
+	            
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_gravity="bottom"
+	                android:orientation="horizontal"
+	                android:background="@color/slider_bg_label"
+	                android:layout_height="wrap_content" >
+	                
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="bottom"
+	                    android:layout_weight="1"
+	                    android:orientation="vertical"
+	                    android:padding="@dimen/dimen_10dp" >
+		                
+		                <TextView
+					            android:id="@+id/tvTitle"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:layout_marginLeft="@dimen/dimen_5dp"
+					            android:text="Medium Text"
+					            android:textColor="@color/text_white_cloor"
+					            android:textSize="@dimen/text_size_22sp"
+					            android:textStyle="bold" />
+					
+					        <TextView
+					            android:id="@+id/tvSubtitle"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:layout_marginLeft="@dimen/dimen_5dp"
+					            android:lines="@integer/num_new_lines_2"
+					            android:text="Small Text"
+					            android:textColor="@color/text_white_cloor"
+					            android:textSize="@dimen/text_size_20sp"/>
+		            
+		            </LinearLayout>
+		            
+	                <ToggleButton
+	                    android:id="@+id/toggleButtonFave"
+	                    android:layout_width="45dp"
+	                    android:layout_height="45dp"
+	                    android:layout_gravity="center"
+	                    android:layout_marginRight="@dimen/dimen_5dp"
+	                    android:background="@drawable/button_toggle_starred_selector"
+	                    android:textOff=""
+	                    android:textOn="" />
+	            
+	            </LinearLayout>
+	                
+	           	
+	            
+	
+	            
+	            
+	        </com.sliding.MGSliding>
+	
+		<!-- </com.sothree.slidinguppanel.SlidingUpPanelLayout> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="@dimen/dimen_40dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgViewDraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:src="@drawable/button_map_draw_selector" />
+
+            <ImageView
+                android:id="@+id/imgViewRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:src="@drawable/button_map_refresh_selector" />
+
+            <ImageView
+                android:id="@+id/imgViewRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:src="@drawable/button_map_route_selector" />
+
+            <ImageView
+                android:id="@+id/imgViewLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:src="@drawable/button_map_location_selector" />
+
+            <ImageView
+                android:id="@+id/imgViewNearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:src="@drawable/button_map_geofence_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_map_arrow" />
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/theme_black_color"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+	
+    </FrameLayout>
+
+</LinearLayout>

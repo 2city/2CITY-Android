@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources  xmlns:tools="http://schemas.android.com/tools"
+tools:ignore="TypographyDashes">
+  <!--Replace placeholder ID with your tracking ID-->
+  <string name="ga_trackingId">UA-58693651-1</string>
+
+  <!--Enable automatic activity tracking-->
+  <bool name="ga_autoActivityTracking">true</bool>
+
+  <!--Enable automatic exception tracking-->
+  <bool name="ga_reportUncaughtExceptions">true</bool>
+  
+    <!-- dispatch period -->
+  <integer name="ga_dispatchPeriod">2</integer>
+  		  
+  
+  <!-- The screen names that will appear in reports -->              
+<string name="com.twocity.BuyTicketDetailActivity">Buy Ticket</string>
+<string name="com.twocity.DetailActivity_old">Home Detail</string>
+<string name="com.twocity.DetailActivity">Home Detail</string>
+<string name="com.twocity.ImageViewerActivity">Image Gallery</string>
+<string name="com.twocity.LoginActivity">Login</string>
+<string name="com.twocity.NewReviewActivity">Review</string>
+<string name="com.twocity.NewsDetailActivity">News Detail</string>
+<string name="com.twocity.ProfileActivity_old">Profile</string>
+<string name="com.twocity.ProfileActivity">Profile</string>
+<string name="com.twocity.RegisterActivity">Registration</string>
+<string name="com.twocity.ReviewActivity">Review List</string>
+<string name="com.twocity.SearchResultActivity">Search Result</string>
+<string name="com.twocity.StoreActivity">Stores</string>
+
+
+</resources>

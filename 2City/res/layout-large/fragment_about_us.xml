@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_black_color" >
+
+    	<FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/nav_bar_pattern" >
+	
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:src="@drawable/header_logo" />
+	
+	        <ImageView
+	            android:id="@+id/imgViewMenu"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left|center"
+	            android:padding="10dp"
+	            android:layout_marginLeft="@dimen/dimen_10dp"
+	            android:src="@drawable/ic_menu" />
+	
+	    </FrameLayout>
+
+    	<!-- <ScrollView
+    	    android:id="@+id/scrollView1"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    android:fillViewport="true" > -->
+
+    	    <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="match_parent"
+    	        android:orientation="vertical" >
+
+    	        <ImageView
+                android:id="@+id/imageViewappicon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/twocity_logo" />
+    	        <ImageView
+    	            android:id="@+id/imageView2"
+    	            android:layout_width="match_parent"
+    	            android:layout_height="wrap_content"
+    	            android:scaleType="centerCrop"
+    	            android:visibility="gone"
+    	            android:src="@drawable/bg_header_aboutus" />
+
+    	        <ImageView
+    	            android:id="@+id/imageView3"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:visibility="gone"
+    	            android:background="@drawable/line_divider_black" />
+
+    	        <ImageView
+    	            android:id="@+id/ImageView01"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="5dp"
+    	            android:visibility="gone"
+    	            android:background="@drawable/line_divider_orange" />
+
+    	        <LinearLayout
+    	            android:layout_width="match_parent"
+    	            android:layout_height="wrap_content"
+    	           android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+    	            android:layout_weight="1"
+    	            android:minHeight="100dp"
+    	            android:orientation="vertical" >
+
+    	            <TextView
+    	                android:id="@+id/textView1"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:text="@string/about_us"
+    	                android:textAppearance="?android:attr/textAppearanceLarge"
+    	                android:textStyle="bold"
+    	                android:visibility="gone" />
+
+    	            <!-- <TextView
+    	                android:id="@+id/textView2"
+    	                android:layout_width="wrap_content"
+    	                android:layout_height="wrap_content"
+    	                android:layout_marginTop="@dimen/dimen_10dp"
+    	                android:text="@string/about_us_detail"
+    	                android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+    	                <WebView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"                        
+            		android:scrollbars="none" />
+    	        </LinearLayout>
+
+    	        <Button
+    	            android:id="@+id/btnCallUs"
+    	            android:layout_width="match_parent"
+    	            android:layout_height="56dp"
+    	             android:layout_marginLeft="@dimen/dimen_20dp"
+    	            android:layout_marginRight="@dimen/dimen_20dp"
+    	            android:layout_marginTop="@dimen/dimen_10dp"
+    	            android:layout_marginBottom="@dimen/dimen_10dp"
+    	            android:background="@drawable/rounded_button_bg"
+    	            android:text="@string/callus"
+    	            android:textColor="@color/skyblue"
+    	            android:textSize="@dimen/text_size_24sp"
+    	            android:textStyle="normal"
+    	            android:visibility="visible" />
+    	        
+    	        <Button
+    	            android:id="@+id/btnContactUs"
+    	            android:layout_width="match_parent"
+    	            android:layout_height="56dp"
+    	             android:layout_marginLeft="@dimen/dimen_20dp"
+    	            android:layout_marginRight="@dimen/dimen_20dp"
+    	            android:layout_marginTop="@dimen/dimen_10dp"
+    	            android:layout_marginBottom="@dimen/dimen_10dp"
+    	            android:background="@drawable/rounded_button_bg"
+    	            android:text="@string/contact_us"
+    	            android:textColor="@color/skyblue"
+    	            android:textSize="@dimen/text_size_24sp"
+    	            android:textStyle="normal" />
+
+    	    </LinearLayout>
+
+    	<!-- </ScrollView> -->
+
+</LinearLayout>
